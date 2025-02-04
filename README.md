@@ -8,14 +8,13 @@ https://fashion-site-eight.vercel.app/
 
 ## ScreenShots
 
-https://github.com/elipirouzi/FashionSite/blob/main/sc01.png
+![](https://raw.githubusercontent.com/elipirouzi/FashionSite/blob/main/sc01.png)
 
-https://github.com/elipirouzi/FashionSite/blob/main/sc02.png
+![](https://raw.githubusercontent.com/elipirouzi/FashionSite/blob/main/sc02.png)
 
-https://github.com/elipirouzi/FashionSite/blob/main/sc03.png
+![](https://raw.githubusercontent.com/elipirouzi/FashionSite/blob/main/sc03.png)
 
-https://github.com/elipirouzi/FashionSite/blob/main/sc04.png
-
+![](https://raw.githubusercontent.com/elipirouzi/FashionSite/blob/main/sc04.png)
 
 ## Build with
 - Next.js 15
