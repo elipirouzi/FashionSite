@@ -1,6 +1,6 @@
 # FashionSite
 
-This is a fashion website coded with React(Redux + Router) and tailwind.
+This is a fashion website coded with React, Nextjs and tailwind.
 You can browse through a bunch of products, add/remove them to/from the basket.
 
 https://fashion-site-eight.vercel.app/
