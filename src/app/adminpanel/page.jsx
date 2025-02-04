@@ -51,13 +51,25 @@ export default function AdminPanel() {
 
     // تعداد محصولات سبد خرید از localStorage
     const getBasketItemCount = () => {
-        const savedBasket = localStorage.getItem('basket');
-        if (savedBasket) {
-            const basket = JSON.parse(savedBasket);
-            return basket.reduce((total, product) => total + product.quantity, 0); // تعداد کل اقلام
+        if (typeof window !== 'undefined') {  // این بررسی می‌کند که کد در سمت کاربر در حال اجرا باشد
+            const savedBasket = localStorage.getItem('basket');
+            if (savedBasket) {
+                const basket = JSON.parse(savedBasket);
+                return basket.reduce((total, product) => total + product.quantity, 0); // تعداد کل اقلام
+            }
         }
         return 0;
-    };
+    }
+    
+    // useEffect(() => {
+    //     if (typeof window !== 'undefined') {
+    //         const savedBasket = localStorage.getItem('basket');
+    //         if (savedBasket) {
+    //             const basket = JSON.parse(savedBasket);
+    //             setBasketItemCount(basket.reduce((total, product) => total + product.quantity, 0));
+    //         }
+    //     }
+    // }, []);
 
 
     const toggleInfoOpen = (id) => {
