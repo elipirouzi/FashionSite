@@ -444,7 +444,7 @@ export default function HeaderComponent() {
                               <FontAwesomeIcon icon={faUser} className="pl-1" />
                               <input
                                 type="email"
-                                className="w-[87%] ml-3 outline-0 text-xs lg:text-sm p-2 bg-transparent"
+                                className="w-[87%] pl-2 outline-0 text-xs lg:text-sm py-2 bg-transparent"
                                 placeholder="Email Address"
                                 required
                                 value={email}
@@ -456,13 +456,13 @@ export default function HeaderComponent() {
                               {errorMessage && <p style={{ color: 'red', fontSize:'14px', paddingLeft:'10px' }}>{errorMessage}</p>}
                           </div>
                           <div className="mb-24">
-                            <span className="ml-1 text-xs font-bold lg:text-sm">Password</span>
+                            <span className="ml-2 text-xs font-bold lg:text-sm">Password</span>
                             <div className="border-b-2 m-2">
                               <div className="flex flex-wrap items-center">
-                              <FontAwesomeIcon icon={faLock} className="pl-1" />
+                                <FontAwesomeIcon icon={faLock} className="pl-1" />
                                 <input
                                   type={showPassword ? "text" : "password"} // تغییر نوع ورودی بر اساس وضعیت
-                                  className="w-[83%] ml-3 outline-0 text-xs lg:text-sm p-2 bg-transparent"
+                                  className="w-[80%] lg:w-[87%] pl-2 outline-0 text-xs lg:text-sm py-2 bg-transparent"
                                   placeholder="Password"
                                   required
                                   value={password}
@@ -470,7 +470,7 @@ export default function HeaderComponent() {
                                 />
                                 <FontAwesomeIcon
                                   icon={showPassword ? faEyeSlash : faEye} // انتخاب آیکون مناسب
-                                  className=" flex justify-center items-center cursor-pointer"
+                                  className="flex justify-end items-center cursor-pointer"
                                   onClick={togglePasswordVisibility} // تابع برای تغییر وضعیت نمایش پسورد
                                 />
                               </div>

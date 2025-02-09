@@ -4,7 +4,7 @@ import { faPhone, faAt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
   return (
-    <div className="w-full 2xl:w-11/12 3xl:w-80 4xl:w-70 5xl:w-60 h-full flex justify-start flex-wrap m-auto">
+    <div className="w-full 2xl:w-11/12 3xl:w-80 4xl:w-70 5xl:w-60 flex justify-start flex-wrap m-auto">
       <div className="w-full text-2xl font-bold text-center tracking-widest my-10">
         <h4>Contact us</h4>
       </div>

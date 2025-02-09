@@ -91,7 +91,7 @@ export default function Basket() {
       <div className='w-full text-2xl font-bold text-center tracking-widest my-10'>
         <h4>SHOPPING BAG</h4>
       </div>
-      <div className='w-full xl:w-[70%] flex justify-center flex-wrap mb-10'>
+      <div className='w-full xl:w-[68%] flex justify-center flex-wrap mb-10'>
         <ul className='w-full flex justify-center flex-wrap'>
           {temp.map((product) => (
             <li key={product.id} className='w-full m-3 md:w-[90%] flex justify-center items-center bg-[#f9f9f9]'>
@@ -134,7 +134,7 @@ export default function Basket() {
       </div>
       {/* نمایش مجموع مبلغ کل سبد خرید */}
       <div className='w-full xl:w-[30%] flex justify-center my-4'>
-        <div className='w-[400px] h-[149px] p-2.5 border-2 border-black flex flex-wrap justify-center'>
+        <div className='w-[360px] md:w-[400px] h-[149px] p-2.5 border-2 border-black flex flex-wrap justify-center'>
           <div className='w-[348px] flex justify-start items-center'>
             <h3 className='font-bold text-xl'>SUBTOTAL: {totalAmount} $</h3>
           </div>
