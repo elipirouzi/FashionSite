@@ -111,16 +111,16 @@ export default function Basket() {
                     <h6 className='w-full flex justify-start text-sm md:justify-start p-1 md:text-xl font-bold'>{product.title}</h6>
                     {/* نمایش تعداد و مبلغ هر محصول */}
                     <div className='font-bold p-1 text-sm'>Quantity: 
-                      <button onClick={() => decreaseQuantity(product.id)} className='w-10 text-gray-400 hover:text-black'>-</button>
+                      <button onClick={() => decreaseQuantity(product.id)} className='w-5 md:w-10 text-gray-400 hover:text-black'>-</button>
                       <span>{product.quantity}</span>
                       {/* دکمه افزایش تعداد با بررسی موجودی */}
-                      <button onClick={() => handleIncreaseQuantity(product)} className='w-10 text-gray-400 hover:text-black'>+</button>
+                      <button onClick={() => handleIncreaseQuantity(product)} className='w-5 md:w-10 text-gray-400 hover:text-black'>+</button>
                     </div>
                     <p className='w-full flex justify-start p-1 text-xs'>price: {product.price} $</p>
                   </div>
                   <div className='w-[16%] h-[90px] flex flex-wrap justify-center content-center pr-2 md:pr-0'>
                     
-                    <p className='w-full flex justify-center font-bold pb-1 pt-1'>{product.price * product.quantity} $</p>
+                    <p className='w-full flex justify-center font-bold pb-1 pt-1 text-sm md:text-base'>{product.price * product.quantity} $</p>
                     {/* حذف محصول از سبد خرید */}
                     <button onClick={() => handleRemoveProductClick(product)} className='w-16 h-8 bg-[#f30856] text-white text-xs rounded-sm'>Remove</button>
                   </div>
